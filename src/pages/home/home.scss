@@ -1,3 +1,60 @@
 page-home {
+}
 
+.center {
+  margin: auto;
+}
+
+.firstHead {
+  background-color: #a1cdca;
+  color: #008c80;
+}
+
+.secondHead {
+  background-color: #fad5c7;
+}
+
+.leaf {
+  font-size: 8rem;
+}
+
+.item-md h2 {
+  font-size: 4rem;
+}
+
+.item-md p {
+  font-size: 1.6rem;
+}
+
+.item-md ion-avatar img {
+  width: 90%;
+  height: auto;
+}
+
+.bigHeader {
+  font-size: 2.6rem !important;
+  text-align: center;
+}
+
+.mediumHead {
+  font-size: 2.2rem !important;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .bigHeader {
+    font-size: 2rem !important;
+  }
+  .mediumHead {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .bigHeader {
+    font-size: 4rem !important;
+  }
+  .mediumHead {
+    font-size: 3rem !important;
+  }
 }
