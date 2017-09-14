@@ -49,26 +49,41 @@
     <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="90%"
       height="500" src="https://prezi.com/embed/zyilgced-bhf/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0dDVsNjVudXM4UHc0VG5wWFF0cUpIVWxRPT0&amp;landing_sign=nIQYaYX55rqp-2GrHaN9LCDeSzmyinWqwyMu1tMGSIA"></iframe>
   </ion-item>
+  <ion-card>
+    <ion-card-header class="prosopika" *ngIf="prosopika">
+      Προσωπικά στοιχεία
+    </ion-card-header>
+    <ion-list radio-group [(ngModel)]="protiErotisi" *ngIf="showerotimatologio">
+      <ion-list-header class="question1">
+        Φύλο
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Άνδρας</ion-label>
+        <ion-radio (ionSelect)="showButton()" value="andras"></ion-radio>
+      </ion-item>
 
-  <ion-list radio-group *ngIf="showerotimatologio" [(ngModel)]="protiErotisi">
-    <ion-list-header class="question1">
-      Φύλο
-    </ion-list-header>
-
-    <ion-item>
-      <ion-label>Άνδρας</ion-label>
-      <ion-radio value="1"></ion-radio>
+      <ion-item>
+        <ion-label>Γυναίκα</ion-label>
+        <ion-radio (ionSelect)="showButton()" value="ginaika"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <ion-item *ngIf="showerotimatologio2">
+      <ion-label class="question2">
+        Ηλικιακή Ομάδα
+      </ion-label>
+      <ion-select [(ngModel)]="age" (ionChange)="showButton2()">
+        <ion-option value="kato_apo_20">Κάτω από 20</ion-option>
+        <ion-option value="21-30">21 - 30</ion-option>
+        <ion-option value="31-50">31 - 50</ion-option>
+        <ion-option value="50-65">50 - 65</ion-option>
+        <ion-option value="pano_apo_65">Πάνω από 65</ion-option>
+      </ion-select>
     </ion-item>
-
-    <ion-item>
-      <ion-label>Γυναίκα</ion-label>
-      <ion-radio value="2"></ion-radio>
-    </ion-item>
-
-  </ion-list>
+  </ion-card>
 
 
   <button *ngIf="showFirstButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
   <button *ngIf="showSecondButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView2()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
   <button *ngIf="showThirdButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView3()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
+  <button *ngIf="showForthButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView4()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
 </ion-content>

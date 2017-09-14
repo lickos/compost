@@ -1,7 +1,8 @@
+import { FireproviderProvider } from "./../../providers/fireprovider/fireprovider";
 import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
-import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
-import { FireproviderProvider } from "../../providers/fireprovider/fireprovider";
+import { AngularFireDatabase } from "angularfire2/database";
+
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
@@ -13,12 +14,17 @@ export class HomePage {
   showSecondButton: boolean = false;
   showerotimatologio: boolean = false;
   showThirdButton: boolean = false;
-  items: FirebaseListObservable<any[]>;
+  showForthButton: boolean = false;
+  protiErotisi: string;
+  sex: string;
+  upValue;
+  prosopika: boolean = false;
+  showerotimatologio2: boolean = false;
 
   constructor(
     public navCtrl: NavController,
     public afd: AngularFireDatabase,
-    public firebaseProvider: FireproviderProvider
+    public fp: FireproviderProvider
   ) {}
 
   changeView() {
@@ -32,11 +38,30 @@ export class HomePage {
     this.showPrezi = false;
     this.showerotimatologio = true;
     this.showSecondButton = false;
+    this.prosopika = true;
+  }
+
+  showButton() {
     this.showThirdButton = true;
   }
 
+  showButton2() {
+    this.showForthButton = true;
+  }
+
   changeView3() {
-    this.items = this.firebaseProvider.getitems();
-    console.log(this.items);
+    if (this.protiErotisi == "andras") {
+      "einai 1";
+      this.sex = "ANDRES";
+    } else if (this.protiErotisi == "ginaika") {
+      this.sex = "GINAIKES";
+    }
+    this.fp.getitems(this.sex).then(data => {
+      this.upValue = data;
+      this.fp.setitems(this.sex, this.upValue);
+    });
+    this.showerotimatologio = false;
+    this.showThirdButton = false;
+    this.showerotimatologio2 = true;
   }
 }
