@@ -13,8 +13,8 @@
       </ion-row>
     </ion-grid>
   </ion-item>
-  <ion-item text-wrap class="secondHead" padding>
-    <ion-avatar item-start>
+  <ion-item text-wrap class="secondHead" padding *ngIf="showDim">
+    <ion-avatar class="dimImage">
       <img src="../../assets/images/dimarxos.jpg" /></ion-avatar>
     <h2>Μήνυμα Δημάρχου Χίου</h2>
     <p>Τα τελευταία χρόνια στη Χίο έχουμε κάνει αρκετά βήματα προς τα μπροστά στο ζήτημα της διαχείρισης των απορριμμάτων. Ο
@@ -31,20 +31,44 @@
       κομποστοποιηθούν. Με την κομποστοποίηση έχουν μειώσει στο μισό τη σακούλα την οποία πετούσαν στα σκουπίδια, και ασφαλώς
       έχουν μειώσει στο μισό την ανάγκη να πάνε στον κάδο να την πετάξουν. Έχουν όμως κερδίσει και κάτι ακόμα εκτός από το
       χρόνο και τον όγκο μέσα στην κουζίνα. Έχουν κερδίσει εξαιρετικής ποιότητας χώμα για τον κήπο τους και τις γλάστρες
-      τους. Το σημαντικότερο όμως που έχουν κερδίσει είναι κάτι που θα το αντιληφθούμε στο μέλλον. Έχει συνεισφέρει ο καθένας
-      στην προστασία του περιβάλλοντος του νησιού μας προσφέροντάς το καθαρότερο στις επόμενες γενιές. Ήρθε η ώρα να κάνουμε
-      το πρώτο βήμα και εμείς χωρίς να περιμένουμε κάποιον άλλο. Ας είναι ο καθένας μας ο πρώτος στη γειτονιά του που θα
-      χρησιμοποιήσει οικιακό κομποστοποιητή και θα μιλήσει στους γύρω του για την εμπειρία από αυτόν. Δηλαδή να εκδηλώσουμε
-      το ενδιαφέρον μας, να ενταχθούμε στο πρόγραμμα της οικιακής κομποστοποίησης συμπληρώνοντας το ερωτηματολόγιο που ακολουθεί.
-      Μόλις ο δήμος Χίου είναι έτοιμος και σύμφωνα με το σχεδιασμό του, θα παραδώσει δωρεάν οικιακούς κομποστοποιητές σε
-      ένα μεγάλο αριθμό νοικοκυριών για να μπορέσουμε να δούμε γρήγορα τα πρώτα αποτελέσματα. Μπορείτε να βρείτε πολλές πληροφορίες
+      τους.
+    </p>
+    <p>Το σημαντικότερο όμως που έχουν κερδίσει είναι κάτι που θα το αντιληφθούμε στο μέλλον. Έχει συνεισφέρει ο καθένας στην
+      προστασία του περιβάλλοντος του νησιού μας προσφέροντάς το καθαρότερο στις επόμενες γενιές. Ήρθε η ώρα να κάνουμε το
+      πρώτο βήμα και εμείς χωρίς να περιμένουμε κάποιον άλλο. Ας είναι ο καθένας μας ο πρώτος στη γειτονιά του που θα χρησιμοποιήσει
+      οικιακό κομποστοποιητή και θα μιλήσει στους γύρω του για την εμπειρία από αυτόν. Δηλαδή να εκδηλώσουμε το ενδιαφέρον
+      μας, να ενταχθούμε στο πρόγραμμα της οικιακής κομποστοποίησης συμπληρώνοντας το ερωτηματολόγιο που ακολουθεί. Μόλις
+      ο δήμος Χίου είναι έτοιμος και σύμφωνα με το σχεδιασμό του, θα παραδώσει δωρεάν οικιακούς κομποστοποιητές σε ένα μεγάλο
+      αριθμό νοικοκυριών για να μπορέσουμε να δούμε γρήγορα τα πρώτα αποτελέσματα. Μπορείτε να βρείτε πολλές πληροφορίες
       για την κομποστοποίηση στο διαδίκτυο αλλά και στο φυλλάδιο που έχει ετοιμάσει η Υπηρεσία Καθαριότητας του Δήμου. Η
       μείωση των απορριμμάτων που θάβονται, αφορά εμάς και κυρίως τα παιδιά μας, και τώρα μπορούμε να κάνουμε ένα ακόμα βήμα
-      προς τη σωστή κατεύθυνση. Οικιακή κομποστοποίηση λοιπόν και ξεκινάμε τώρα! </p><br/>
+      προς τη σωστή κατεύθυνση. Οικιακή κομποστοποίηση λοιπόν και ξεκινάμε τώρα!</p><br/><br/>
     <p><strong>Ο Δήμαρχος Χίου Μανώλης Βουρνούς</strong></p>
   </ion-item>
-  <ion-item>
+  <ion-item class="centerAlign" *ngIf="showPrezi">
     <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="90%"
-      height="800" src="https://prezi.com/embed/zyilgced-bhf/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0dDVsNjVudXM4UHc0VG5wWFF0cUpIVWxRPT0&amp;landing_sign=nIQYaYX55rqp-2GrHaN9LCDeSzmyinWqwyMu1tMGSIA"></iframe>
+      height="500" src="https://prezi.com/embed/zyilgced-bhf/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0dDVsNjVudXM4UHc0VG5wWFF0cUpIVWxRPT0&amp;landing_sign=nIQYaYX55rqp-2GrHaN9LCDeSzmyinWqwyMu1tMGSIA"></iframe>
   </ion-item>
+
+  <ion-list radio-group *ngIf="showerotimatologio" [(ngModel)]="protiErotisi">
+    <ion-list-header class="question1">
+      Φύλο
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Άνδρας</ion-label>
+      <ion-radio value="1"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Γυναίκα</ion-label>
+      <ion-radio value="2"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
+
+  <button *ngIf="showFirstButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
+  <button *ngIf="showSecondButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView2()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
+  <button *ngIf="showThirdButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView3()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
 </ion-content>
