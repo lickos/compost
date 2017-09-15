@@ -3,6 +3,7 @@ page-home {
 
 .center {
   margin: auto;
+  text-align: center;
 }
 
 .centerAlign {
@@ -18,8 +19,8 @@ page-home {
 }
 
 .firstHead {
-  background-color: #a1cdca;
-  color: #008c80;
+  background-color: #8dcbc7;
+  color: #8e2800;
 }
 
 .prosopika {
@@ -42,21 +43,34 @@ page-home {
 }
 
 .btnnext {
-  font-size: 2em;
+  font-size: 1.7em;
   height: 3em;
-  background-color: #008c80;
+  background-color: #8dcbc7;
+  color: #8e2800;
 }
 
 .secondHead {
-  background-color: #fad5c7;
+  background-color: #c3c3c3;
+}
+
+.item-md p {
+  font-size: 1.8rem !important;
+}
+
+@media screen and (max-width: 610px) {
+  .leaf,
+  .logo {
+    display: none;
+  }
 }
 
 .leaf {
   font-size: 8rem;
+  color: #008c80;
 }
 
 .item-md h2 {
-  font-size: 4rem;
+  font-size: 2.6em;
 }
 
 .item-md p {
@@ -69,29 +83,11 @@ page-home {
 }
 
 .bigHeader {
-  font-size: 2.6rem !important;
+  font-size: 3.2em !important;
   text-align: center;
 }
 
 .mediumHead {
-  font-size: 2.2rem !important;
+  font-size: 2em !important;
   text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  .bigHeader {
-    font-size: 2rem !important;
-  }
-  .mediumHead {
-    font-size: 1.5rem !important;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .bigHeader {
-    font-size: 4rem !important;
-  }
-  .mediumHead {
-    font-size: 3rem !important;
-  }
 }

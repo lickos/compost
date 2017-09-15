@@ -1,8 +1,8 @@
 {
   "name": "compostsurvey",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "ΔΗΜΟΣ ΧΙΟΥ",
+  "homepage": "http://www.chioscity.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -53,8 +53,6 @@
       "cordova-plugin-whitelist": {},
       "ionic-plugin-keyboard": {}
     },
-    "platforms": [
-      "browser"
-    ]
+    "platforms": ["browser"]
   }
 }

@@ -1,14 +1,16 @@
 <ion-content padding>
   <ion-item>
     <ion-grid>
-      <ion-row class="firstHead" padding>
+      <ion-row class="firstHead">
         <ion-col col-2 class="center">
           <ion-icon class="leaf" name="ios-leaf"></ion-icon>
         </ion-col>
-        <ion-col col-10 class="center">
+        <ion-col col-8 class="center">
           <h1 class="bigHeader">ΔΗΜΟΣ ΧΙΟΥ</h1>
           <h2 class="mediumHead">Οικιακή Κομποστοποίηση</h2>
-          <h1 class="mediumHead">Διεύθυνση Καθαριότητας και Ανακύκλωσης</h1>
+        </ion-col>
+        <ion-col col-2 class="center">
+          <img class="logo" src="../../assets/images/sfigga.png" />
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -17,7 +19,7 @@
     <ion-avatar class="dimImage">
       <img src="../../assets/images/dimarxos.jpg" /></ion-avatar>
     <h2>Μήνυμα Δημάρχου Χίου</h2>
-    <p>Τα τελευταία χρόνια στη Χίο έχουμε κάνει αρκετά βήματα προς τα μπροστά στο ζήτημα της διαχείρισης των απορριμμάτων. Ο
+    <p class="minima">Τα τελευταία χρόνια στη Χίο έχουμε κάνει αρκετά βήματα προς τα μπροστά στο ζήτημα της διαχείρισης των απορριμμάτων. Ο
       στόχος είναι ένας: η εξάλειψη των απορριμμάτων που οδηγούνται για θάψιμο στο Χώρο Υγιειονομικής Ταφής. Ένα από τα μέσα
       τα οποία θέλουμε να χρησιμοποιήσουμε είναι η κομποστοποίηση, δηλαδή η επιτάχυνση της φυσικής διαδικασίας αποδόμησης
       των οργανικών απορριμμάτων. Υπολείμματα από φρούτα και λαχανικά, χαρτί κουζίνας και χαρτοπετσέτες, κλαδέματα και αγριόχορτα
@@ -33,7 +35,7 @@
       χρόνο και τον όγκο μέσα στην κουζίνα. Έχουν κερδίσει εξαιρετικής ποιότητας χώμα για τον κήπο τους και τις γλάστρες
       τους.
     </p>
-    <p>Το σημαντικότερο όμως που έχουν κερδίσει είναι κάτι που θα το αντιληφθούμε στο μέλλον. Έχει συνεισφέρει ο καθένας στην
+    <p class="minima">Το σημαντικότερο όμως που έχουν κερδίσει είναι κάτι που θα το αντιληφθούμε στο μέλλον. Έχει συνεισφέρει ο καθένας στην
       προστασία του περιβάλλοντος του νησιού μας προσφέροντάς το καθαρότερο στις επόμενες γενιές. Ήρθε η ώρα να κάνουμε το
       πρώτο βήμα και εμείς χωρίς να περιμένουμε κάποιον άλλο. Ας είναι ο καθένας μας ο πρώτος στη γειτονιά του που θα χρησιμοποιήσει
       οικιακό κομποστοποιητή και θα μιλήσει στους γύρω του για την εμπειρία από αυτόν. Δηλαδή να εκδηλώσουμε το ενδιαφέρον
@@ -43,47 +45,17 @@
       για την κομποστοποίηση στο διαδίκτυο αλλά και στο φυλλάδιο που έχει ετοιμάσει η Υπηρεσία Καθαριότητας του Δήμου. Η
       μείωση των απορριμμάτων που θάβονται, αφορά εμάς και κυρίως τα παιδιά μας, και τώρα μπορούμε να κάνουμε ένα ακόμα βήμα
       προς τη σωστή κατεύθυνση. Οικιακή κομποστοποίηση λοιπόν και ξεκινάμε τώρα!</p><br/><br/>
-    <p><strong>Ο Δήμαρχος Χίου Μανώλης Βουρνούς</strong></p>
+    <p><strong>Ο Δήμαρχος Χίου <br/>Μανώλης Βουρνούς</strong></p>
   </ion-item>
   <ion-item class="centerAlign" *ngIf="showPrezi">
     <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="90%"
-      height="500" src="https://prezi.com/embed/zyilgced-bhf/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0dDVsNjVudXM4UHc0VG5wWFF0cUpIVWxRPT0&amp;landing_sign=nIQYaYX55rqp-2GrHaN9LCDeSzmyinWqwyMu1tMGSIA"></iframe>
+      height="650" src="https://prezi.com/embed/zyilgced-bhf/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0dDVsNjVudXM4UHc0VG5wWFF0cUpIVWxRPT0&amp;landing_sign=nIQYaYX55rqp-2GrHaN9LCDeSzmyinWqwyMu1tMGSIA"></iframe>
   </ion-item>
-  <ion-card>
-    <ion-card-header class="prosopika" *ngIf="prosopika">
-      Προσωπικά στοιχεία
-    </ion-card-header>
-    <ion-list radio-group [(ngModel)]="protiErotisi" *ngIf="showerotimatologio">
-      <ion-list-header class="question1">
-        Φύλο
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Άνδρας</ion-label>
-        <ion-radio (ionSelect)="showButton()" value="andras"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Γυναίκα</ion-label>
-        <ion-radio (ionSelect)="showButton()" value="ginaika"></ion-radio>
-      </ion-item>
-    </ion-list>
-    <ion-item *ngIf="showerotimatologio2">
-      <ion-label class="question2">
-        Ηλικιακή Ομάδα
-      </ion-label>
-      <ion-select [(ngModel)]="age" (ionChange)="showButton2()">
-        <ion-option value="kato_apo_20">Κάτω από 20</ion-option>
-        <ion-option value="21-30">21 - 30</ion-option>
-        <ion-option value="31-50">31 - 50</ion-option>
-        <ion-option value="50-65">50 - 65</ion-option>
-        <ion-option value="pano_apo_65">Πάνω από 65</ion-option>
-      </ion-select>
-    </ion-item>
-  </ion-card>
-
+  <ion-item class="centerAlign" *ngIf="erotimatologio">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCwD4xlE96asPmX41o8byocLqvZocOpybXA1j7ps1ky7qOYw/viewform?embedded=true"
+      width="90%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </ion-item>
 
   <button *ngIf="showFirstButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
   <button *ngIf="showSecondButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView2()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
-  <button *ngIf="showThirdButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView3()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
-  <button *ngIf="showForthButton" ion-button full round class="marginTop btnnext" icon-right (click)="changeView4()">ΕΠΟΜΕΝΟ<ion-icon name="ios-arrow-dropright"></ion-icon></button>
 </ion-content>
